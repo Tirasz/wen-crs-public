@@ -1,0 +1,21 @@
+{
+  "description": "Copy content to language-specific fields",
+  "processors": [
+    {
+      "set": {
+        "field": "{{lang}}",
+        "value": "{{content}}"
+      }
+    },
+    {
+      "remove": {
+        "field": "content"
+      }
+    },
+    {
+      "remove": {
+        "field": "lemmatized"
+      }
+    }
+  ]
+}

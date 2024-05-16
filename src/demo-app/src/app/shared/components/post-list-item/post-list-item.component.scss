@@ -1,0 +1,21 @@
+
+.post-container {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--grey3);
+  padding: 10px;
+  .post-id {
+    width: 100%;
+    font: 400 11px / 15px Segoe UI, Lucida Sans, Arial, sans-serif;
+    color: rgb(119, 169, 0);
+  }
+  .post-content {
+    width: 100%;
+    word-break: break-all;
+    font: 400 16px/24px Segoe UI,Lucida Sans,Arial,sans-serif
+  }
+  .post-embed {
+    border-radius: 4px;
+    width: 100%;
+  }
+}

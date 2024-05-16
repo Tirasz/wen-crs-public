@@ -1,0 +1,14 @@
+{
+  "fields": ["createdDate"],
+  "sort": [{
+    "createdDate": {
+      "order": "desc"
+    }
+  },
+  {
+    "_score": {
+      "order": "desc"
+    }
+  }],
+  "size": 1
+}

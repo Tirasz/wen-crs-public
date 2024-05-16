@@ -1,0 +1,10 @@
+.app-container {
+  height: 100vh;
+
+  overflow: hidden;
+  background-color: var(--grey1);
+
+  app-channel-list, .outlet-container {
+    padding: 0;
+  }
+}

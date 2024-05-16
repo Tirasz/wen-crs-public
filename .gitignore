@@ -1,0 +1,12 @@
+__pycache__
+.venv
+.ipynb_checkpoints
+volumes
+datasets
+cert
+*pkl
+*.npy
+notebooks
+*ipynb
+dataset.json
+*.sql

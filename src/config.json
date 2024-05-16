@@ -1,0 +1,11 @@
+{
+  "EMBEDDING_MODEL": "distiluse-base-multilingual-cased-v1",
+  "EMBEDDING_DIM": 512,
+  "SPACY_MODELS": {
+    "en": "en_core_web_md",
+    "de": "de_core_news_md",
+    "hu": "hu_core_news_md"
+  },
+  "INDEX_NAME": "channel-posts",
+  "PIPELINE_ID": "ingest-channel-posts"
+}

@@ -1,0 +1,27 @@
+.post-view-header {
+  gap: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--grey2);
+  .post-view-header-img {
+    background-color: var(--grey1);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  .post-view-header-title {
+    font: 600 16px/21px Segoe UI, Lucida Sans, Arial, sans-serif
+  }
+  .query-params-form-container {
+    flex-grow: 1;
+    gap: 50px;
+  }
+  .spinner-container {
+    mat-spinner {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+}

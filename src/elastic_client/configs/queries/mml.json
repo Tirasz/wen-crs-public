@@ -1,0 +1,7 @@
+{
+  "multi_match": {
+    "query": "",
+    "type": "best_fields",
+    "fields": []
+  }
+}

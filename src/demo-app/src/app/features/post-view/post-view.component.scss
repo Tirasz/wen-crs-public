@@ -1,0 +1,23 @@
+.post-view-container {
+  height: 100vh;
+  background: url('/assets/stolen/we-logo.svg');
+
+  app-post-view-header {
+    width: 100%;
+  }
+
+  .post-list-container {
+    gap:10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20%;
+    .post-container {
+      width: 60%;
+      margin: 15px auto;
+    }
+    .refresh-button-container {
+      padding: 10px;
+    }
+  }
+  
+}

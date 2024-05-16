@@ -1,0 +1,16 @@
+<div class="post-view-container d-flex flex-column align-items-center">
+  <app-post-view-header [isLoading]="(isLoading | async)!"></app-post-view-header>
+  <cdk-virtual-scroll-viewport itemSize="1" class="post-list-container">
+    <div class="post-container">
+      <app-post-list-item [post]="(currentPost | async)!"></app-post-list-item>
+    </div>
+    <div class="post-container" *ngFor="let post of recommendations | async">
+      <app-post-list-item [post]="post" (clicked)="navigateToPost($event)"></app-post-list-item>
+    </div>
+    <div class="refresh-button-container d-flex flex-column justify-content-center align-items-center">
+      <button [disabled]="(isLoading | async)" (click)="fetchNextPage()" mat-fab color="primary" aria-label="Fetch more recommendations">
+        <mat-icon>add_circle</mat-icon>
+      </button>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>

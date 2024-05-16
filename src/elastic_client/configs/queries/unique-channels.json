@@ -1,0 +1,26 @@
+{
+  "size": 0,
+  "aggs": {
+    "channels": {
+      "composite": {
+        "size": 50,
+        "sources": [
+          {
+            "channelId": {
+              "terms": {
+                "field": "channelId"
+              }
+            }
+          },
+          {
+            "channelName": {
+              "terms": {
+                "field": "channelName"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

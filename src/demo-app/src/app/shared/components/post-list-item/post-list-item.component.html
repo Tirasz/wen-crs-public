@@ -1,0 +1,8 @@
+<div class="post-container d-flex flex-column align-items-center" (click)="onClick()">
+  <div class="post-id d-flex flex-row align-items-center justify-content-between">
+    <div>{{post.author}}</div>
+    <div>{{post.channelName}}</div>
+  </div>
+  <div class="post-content" [innerHTML]="post.content | markdown"></div>
+  <img class="post-embed" *ngIf="post.embed" [src]="post.embed" alt="">
+</div>

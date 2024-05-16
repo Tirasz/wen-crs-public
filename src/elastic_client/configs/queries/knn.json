@@ -1,0 +1,6 @@
+{
+  "field": "vector",
+  "query_vector": [],
+  "k": 50,
+  "num_candidates": 150
+}

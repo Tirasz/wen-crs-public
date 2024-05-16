@@ -1,0 +1,11 @@
+{
+  "query": {},
+  "knn": {},
+  "rank": {
+    "rrf": {
+      "window_size": 100,
+      "rank_constant": 60
+    }
+  },
+  "size": 10
+}

@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "channelId": {
+        "type": "keyword"
+      },
+      "channelName": {
+        "type": "keyword"
+      },
+      "author": {
+        "type": "keyword"
+      },
+      "embed": {
+        "type": "keyword"
+      },
+      "lang": {
+        "type": "keyword"
+      },
+      "en": {
+        "type": "text",
+        "analyzer": "english"
+      },
+      "de": {
+        "type": "text",
+        "analyzer": "german"
+      },
+      "hu": {
+        "type": "text",
+        "analyzer": "hungarian"
+      },
+      "createdDate": {
+        "type": "date"
+      },
+      "vector": {
+        "type": "dense_vector",
+        "dims": 0,
+        "index": "true",
+        "similarity": "cosine"
+      }
+    }
+  }
+}
